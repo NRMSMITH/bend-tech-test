@@ -22,8 +22,8 @@ describe('GET /api/books', () => {
             expect(body.books.length === 5).toBe(true);
             body.books.forEach((book) => {
                 expect(book).toMatchObject({
-                    book_name: expect.any(String),
-                    book_writer: expect.any(String)
+                    book_title: expect.any(String),
+                    book_author: expect.any(String)
                 })
             })
         })
